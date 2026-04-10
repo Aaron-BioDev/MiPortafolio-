@@ -2,56 +2,144 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
+  <meta name="description" content="Contacto — Aaron Guzman Hinojosa. Desarrollador web y técnico TI disponible para proyectos. Escríbeme y trabajemos juntos.">
+  <title>Contacto — Aaron Guzman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="Img/Contacto 1.png" type="image/x-icon">
+  <link rel="icon" href="Img/Contacto 1.png" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="../index.html" class="list-items">Inicio</a></li>
-         <!-- <li><a href="#" class="list-items">Services</a></li>
-          <li><a href="#" class="list-items">Team</a></li>
-          <li><a href="#" class="list-items">Contact</a></li>   -->
-        </ul>
-      </nav>
+
+  <header class="page-header">
+    <div class="page-header-inner">
+      <a href="/" class="back-btn">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Volver al Portafolio
+      </a>
+      <h1>¿Tienes un <span class="grad">Proyecto</span>?</h1>
+      <p class="page-subtitle">Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales</p>
     </div>
   </header>
 
-  <main>
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form action="https://formspree.io/f/xzzppplk" method="POST">
-        <label for="nombre">Tu nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+  <main class="page-main">
 
-        <label for="email">Tu correo electrónico:</label>
-        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, ingresa un correo electrónico válido">
+    <div class="contact-grid">
 
-        <label for="message">Tu mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+      <!-- Info -->
+      <div class="contact-info-panel">
+        <h2>Información de <span class="grad">Contacto</span></h2>
+        <p class="info-intro">Cuéntame sobre tu proyecto o necesidad. Respondo en menos de 24 horas.</p>
 
-        <button type="submit">Enviar</button>
-      </form>
+        <div class="contact-links">
+          <a href="mailto:aaronguzman3335@gmail.com" class="contact-card" id="contact-email-link">
+            <div class="contact-card-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>aaronguzman3335@gmail.com</span>
+            </div>
+          </a>
 
-      <div class="info-contacto">
-        <p>También puedes contactarme por email o a través de mis redes sociales:</p>
-        <ul>
-          <li>Email: <a href="aaronguzman3335@gmail.com">aaronguzman3335@gmail.com</a></li>
-         <!-- <li>LinkedIn: <a href="https://linkedin.com/tuperfil" target="_blank">linkedin.com/tuperfil</a></li>-->
-          <li>GitHub: <a href="https://github.com/AaronGuzmanSERVICE" target="_blank">https://github.com/AaronGuzmanSERVICE</a></li>
-        </ul>
+          <a href="https://github.com/AaronGuzmanSERVICE" target="_blank" rel="noopener" class="contact-card" id="contact-github-link">
+            <div class="contact-card-icon">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div>
+              <strong>GitHub</strong>
+              <span>AaronGuzmanSERVICE</span>
+            </div>
+          </a>
+
+          <div class="contact-card" id="contact-location-card">
+            <div class="contact-card-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div>
+              <strong>Ubicación</strong>
+              <span>Guadalajara, Jalisco, México</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="availability-badge">
+          <div class="avail-dot"></div>
+          <span>Disponible para nuevos proyectos</span>
+        </div>
+
+        <div class="services-mini">
+          <h3>¿En qué puedo ayudarte?</h3>
+          <ul>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Desarrollo de sitios y aplicaciones web</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Soporte técnico de hardware y software</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Configuración y diagnóstico de redes</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Reparación de smartphones y laptops</li>
+          </ul>
+        </div>
       </div>
-    </section>
 
-    <section id="derechos-reservados">
-      <p>Derechos reservados &copy; 2024 Aaron Guzman Hinojosa</p>
-    </section>
+      <!-- Form -->
+      <div class="form-panel">
+        <form action="https://formspree.io/f/xzzppplk" method="POST" class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name">Tu nombre</label>
+              <input type="text" id="form-name" name="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Correo electrónico</label>
+              <input type="email" id="form-email" name="email"
+                placeholder="ej@empresa.com" required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                title="Ingresa un correo válido">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-subject">Asunto</label>
+            <input type="text" id="form-subject" name="asunto" placeholder="¿En qué puedo ayudarte?">
+          </div>
+          <div class="form-group">
+            <label for="form-message">Mensaje</label>
+            <textarea id="form-message" name="message" rows="6"
+              placeholder="Cuéntame sobre tu proyecto, presupuesto y plazos..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submit-btn">
+            <ion-icon name="send-outline"></ion-icon>
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+
+    </div>
   </main>
 
+  <footer class="page-footer">
+    <p>&copy; 2024 Oscar Aaron Guzman Hinojosa — Ageron Systems. Todos los derechos reservados.</p>
+    <a href="/" class="back-btn">
+      <ion-icon name="home-outline"></ion-icon>
+      Volver al Inicio
+    </a>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const btn  = document.getElementById('submit-btn');
+    if (form && btn) {
+      form.addEventListener('submit', () => {
+        btn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon> Enviando...';
+        btn.style.opacity = '0.7';
+        btn.style.pointerEvents = 'none';
+        setTimeout(() => {
+          btn.innerHTML = '<ion-icon name="checkmark-outline"></ion-icon> ¡Enviado!';
+          btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+          btn.style.opacity = '1';
+        }, 2000);
+      });
+    }
+  </script>
 </body>
 </html>

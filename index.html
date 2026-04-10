@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Oscar Aaron Guzman Hinojosa — Desarrollador Web, Técnico en Hardware & Software, certificado por Cisco y Alura LATAM. Disponible para proyectos y servicios tecnológicos.">
+  <meta name="keywords" content="desarrollador web, portafolio, Cisco, Alura, JavaScript, HTML, CSS, redes, ciberseguridad, Guadalajara">
+  <meta name="author" content="Oscar Aaron Guzman Hinojosa">
+  <meta property="og:title" content="Aaron Guzman — Desarrollador Web & Técnico TI">
+  <meta property="og:description" content="Portafolio profesional con certificaciones Cisco y Alura LATAM. Desarrollo web, redes y soporte técnico.">
+  <meta property="og:type" content="website">
+  <title>Aaron Guzman — Desarrollador Web & Técnico TI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/LOGO1.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- ========== CURSOR GLOW ========== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="header" id="header">
+    <nav class="navbar container" id="navbar">
+      <a href="#inicio" class="logo" id="logo-link">
+        <img src="assets/images/Logo%20Aaron.png" alt="Logo Aaron" class="logo-icon">
+        <span class="logo-text">Aaron <strong>Guzman</strong></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active" id="nav-inicio">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link" id="nav-sobre">Sobre&nbsp;Mí</a></li>
+        <li><a href="#habilidades" class="nav-link" id="nav-skills">Habilidades</a></li>
+        <li><a href="#certificaciones" class="nav-link" id="nav-certs">Certificaciones</a></li>
+        <li><a href="#proyectos" class="nav-link" id="nav-proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link" id="nav-contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contacto" class="btn btn-cta" id="btn-hire">Contrátame</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Disponible para proyectos
+          </div>
+          <h1 class="hero-title">
+            Hola, soy<br>
+            <span class="gradient-text">Oscar Aaron</span><br>
+            Guzman Hinojosa
+          </h1>
+          <p class="hero-roles">
+            <span class="role-tag" id="role-tag">Desarrollador Web</span>
+          </p>
+          <p class="hero-description">
+            Técnico en hardware &amp; software · Estudiante de Ciencias Biomédicas (UdeG). Combino tecnología y pensamiento analítico para
+            ofrecer soluciones digitales confiables.
+          </p>
+          <div class="hero-tech-stack">
+            <span class="tech-badge">HTML/CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Cisco</span>
+            <span class="tech-badge">Redes</span>
+            <span class="tech-badge">Ciberseguridad</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary" id="btn-ver-proyectos">
+              <ion-icon name="briefcase-outline"></ion-icon>
+              Ver Proyectos
+            </a>
+            <a href="#contacto" class="btn btn-ghost" id="btn-contactar">
+              <ion-icon name="mail-outline"></ion-icon>
+              Contactar
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-ring-outer">
+            <div class="profile-ring-inner">
+              <img src="assets/images/perfil2.png" alt="Foto de perfil de Aaron Guzman Hinojosa" class="profile-img" id="profile-photo">
+            </div>
+          </div>
+          <div class="floating-card card-1">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+            <span>Cisco Certified</span>
+          </div>
+          <div class="floating-card card-2">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <span>Full Stack Dev</span>
+          </div>
+          <div class="floating-card card-3">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>Six Sigma WB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card reveal">
+          <span class="stat-number" data-target="3" id="stat-cisco">0</span>
+          <span class="stat-label">Certificaciones Cisco</span>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-number" data-target="31" id="stat-alura">0</span>
+          <span class="stat-label">Cursos Alura LATAM</span>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-number" data-target="2" id="stat-years">0</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-number" data-target="10" id="stat-projects">0</span>
+          <span class="stat-label">Proyectos Completados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE MÍ ========== -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Conóceme</span>
+          <h2 class="section-title">Sobre <span class="gradient-text">Mí</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <h3 class="about-subtitle">¿Quién soy?</h3>
+            <p class="about-text">
+              Soy <strong>Aaron Guzman Hinojosa</strong>, originario de Guadalajara, Jalisco, México.
+              Apasionado por el funcionamiento de las cosas — tanto tecnológicas como naturales. Actualmente
+              estudio la licenciatura en <strong>Ciencias Biomédicas en la Universidad de Guadalajara</strong>, combinando
+              mi formación científica con una profunda vocación tecnológica.
+            </p>
+            <p class="about-text">
+              Con más de <strong>2 años de experiencia</strong> como técnico de hardware y software, me especializo
+              en reparación de teléfonos móviles y laptops. Mi objetivo a largo plazo: consolidar
+              <strong>Ageron Systems</strong> como referente en diseño web y servicios TI en Guadalajara.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Guadalajara, Jalisco, México</span>
+              </div>
+              <div class="about-info-item">
+                <ion-icon name="school-outline"></ion-icon>
+                <span>Universidad de Guadalajara</span>
+              </div>
+              <div class="about-info-item">
+                <ion-icon name="logo-github"></ion-icon>
+                <a href="https://github.com/AaronGuzmanSERVICE" target="_blank" rel="noopener">AaronGuzmanSERVICE</a>
+              </div>
+              <div class="about-info-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:aaronguzman3335@gmail.com">aaronguzman3335@gmail.com</a>
+              </div>
+            </div>
+
+            <a href="#contacto" class="btn btn-primary mt-md" id="btn-about-contact">
+              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              Hablemos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section class="section section-alt" id="habilidades">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Mi Stack</span>
+          <h2 class="section-title">Habilidades <span class="gradient-text">Técnicas</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Desarrollo Web -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <ion-icon name="globe-outline"></ion-icon>
+              </div>
+              <h3>Desarrollo Web</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML5 / CSS3</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>JavaScript</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>React (Aprendiendo)</span>
+                  <span>40%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes & Seguridad -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <ion-icon name="shield-outline"></ion-icon>
+              </div>
+              <h3>Redes & Seguridad</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>CCNAv7 Enterprise</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Ciberseguridad</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>IoT (Internet de las Cosas)</span>
+                  <span>78%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hardware & Soporte -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <h3>Hardware & Soporte</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Reparación de Smartphones</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Reparación de Laptops</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Diagnóstico de Software</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metodologías -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+              <h3>Metodologías</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Lean Six Sigma</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Productividad & Hábitos</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Resolución de Problemas</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICACIONES ========== -->
+    <section class="section" id="certificaciones">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Validado por la Industria</span>
+          <h2 class="section-title">Mis <span class="gradient-text">Certificaciones</span></h2>
+          <p class="section-description">Credenciales verificables que respaldan mi expertise técnico</p>
+        </div>
+
+        <!-- CISCO -->
+        <div class="cert-provider-block reveal">
+          <div class="cert-provider-header">
+            <div class="cert-provider-logo">
+              <img src="mis-especialidades/assents/Cisco.png" alt="Cisco Networking Academy" id="cisco-logo">
+            </div>
+            <div>
+              <h3 class="cert-provider-name">Cisco Networking Academy</h3>
+              <p class="cert-provider-sub">Certificaciones en Redes, Seguridad y IoT verificadas en Credly</p>
+            </div>
+          </div>
+
+          <div class="cert-cards-grid">
+            <div class="cert-card cert-cisco">
+              <div class="cert-card-top">
+                <div class="cert-icon"><ion-icon name="wifi-outline"></ion-icon></div>
+                <span class="cert-year">2021</span>
+              </div>
+              <h4 class="cert-name">Internet of Everything</h4>
+              <p class="cert-desc">Internet de todas las cosas — Fundamentos de IoT y conectividad de dispositivos</p>
+              <div class="cert-badge-embed" id="cisco-badge-1">
+                <div data-iframe-width="150" data-iframe-height="270"
+                  data-share-badge-id="0e6b73ff-062e-49fb-820a-00c107fbf8af"
+                  data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+              </div>
+              <div class="cert-tags">
+                <span>IoT</span><span>Conectividad</span><span>Cisco</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-cisco">
+              <div class="cert-card-top">
+                <div class="cert-icon"><ion-icon name="lock-closed-outline"></ion-icon></div>
+                <span class="cert-year">2021</span>
+              </div>
+              <h4 class="cert-name">Introduction to Cybersecurity</h4>
+              <p class="cert-desc">Fundamentos de ciberseguridad, amenazas, vulnerabilidades y buenas prácticas</p>
+              <div class="cert-badge-embed" id="cisco-badge-2">
+                <div data-iframe-width="150" data-iframe-height="270"
+                  data-share-badge-id="c31427d3-8281-47b8-8be9-1840a455a7cf"
+                  data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+              </div>
+              <div class="cert-tags">
+                <span>Seguridad</span><span>Amenazas</span><span>Cisco</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-cisco cert-featured">
+              <div class="cert-featured-label">⭐ Destacado</div>
+              <div class="cert-card-top">
+                <div class="cert-icon"><ion-icon name="server-outline"></ion-icon></div>
+                <span class="cert-year">2023</span>
+              </div>
+              <h4 class="cert-name">CCNAv7: Enterprise Networking, Security & Automation</h4>
+              <p class="cert-desc">Redes empresariales, seguridad avanzada y automatización de infraestructuras</p>
+              <div class="cert-badge-embed" id="cisco-badge-3">
+                <div data-iframe-width="150" data-iframe-height="270"
+                  data-share-badge-id="f0064277-ffe8-41ec-94d5-85266ed3d79c"
+                  data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+              </div>
+              <div class="cert-tags">
+                <span>CCNA</span><span>Redes</span><span>Automatización</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALURA LATAM -->
+        <div class="cert-provider-block reveal">
+          <div class="cert-provider-header">
+            <div class="cert-provider-logo cert-logo-alura">
+              <img src="https://img.icons8.com/color/96/000000/graduation-cap.png" alt="Alura LATAM" id="alura-logo">
+            </div>
+            <div>
+              <h3 class="cert-provider-name">Alura LATAM</h3>
+              <p class="cert-provider-sub">Formación en Programación Web y Lógica de Programación — 2024</p>
+            </div>
+          </div>
+
+          <div class="cert-cards-grid cert-alura-grid">
+            <div class="cert-card cert-alura">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML icon" class="cert-card-icon"></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">HTML & CSS Partes 1-4</h4>
+              <p class="cert-desc">Diseño y maquetación web, responsive design y buenas prácticas de marcado</p>
+              <div class="cert-tags">
+                <span>HTML</span><span>CSS</span><span>Responsive</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-alura">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" class="cert-card-icon"></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">Lógica de Programación con JavaScript</h4>
+              <p class="cert-desc">Formación en lógica de programación y sintaxis JavaScript moderna</p>
+              <div class="cert-tags">
+                <span>JavaScript</span><span>Lógica</span><span>Alura</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-alura">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/color/48/000000/task.png" alt="Productividad icon" class="cert-card-icon"></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">Hábitos: Ser Productivo</h4>
+              <p class="cert-desc">Técnicas de productividad, gestión del tiempo y cumplimiento de metas personales</p>
+              <div class="cert-tags">
+                <span>Productividad</span><span>Hábitos</span><span>Soft Skills</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-alura">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/color/48/000000/globe.png" alt="HTTP icon" class="cert-card-icon"></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">HTTP: La Base de Internet</h4>
+              <p class="cert-desc">Protocolos HTTP/HTTPS, comunicación cliente-servidor y fundamentos web</p>
+              <div class="cert-tags">
+                <span>HTTP</span><span>Internet</span><span>Protocolos</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-alura">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="IA icon" class="cert-card-icon"></div>
+                <span class="cert-year">2026</span>
+              </div>
+              <h4 class="cert-name">Inmersión Dev: Agentes de IA</h4>
+              <p class="cert-desc">Desarrollo de sistemas inteligentes con RAG y LangGraph — 3 clases prácticas</p>
+              <a href="https://credsverse.com/credentials/fd92bdf9-67f0-4c81-a1ec-e5d06e0e1c5a" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <ion-icon name="open-outline"></ion-icon>
+                Ver Credencial
+              </a>
+              <div class="cert-tags">
+                <span>IA</span><span>RAG</span><span>LangGraph</span><span>Alura</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-alura">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/fluency/48/google-logo.png" alt="Google logo" class="cert-card-icon"></div>
+                <span class="cert-year">2025</span>
+              </div>
+              <h4 class="cert-name">Inmersión IA: Google Gemini</h4>
+              <p class="cert-desc">Uso práctico de Gemini, prompts efectivos e integración con Google Workspace</p>
+              <a href="https://credsverse.com/credentials/f222f84f-580e-491e-8b12-bf5402e826b9" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <ion-icon name="open-outline"></ion-icon>
+                Ver Credencial
+              </a>
+              <div class="cert-tags">
+                <span>Gemini</span><span>Prompts</span><span>Google Workspace</span><span>Alura</span>
+              </div>
+            </div>
+
+            <div class="cert-card cert-alura cert-alura-view">
+              <div class="cert-card-top">
+                <div class="cert-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">Ver Certificado Completo</h4>
+              <p class="cert-desc">Accede al certificado oficial emitido por Alura LATAM con todos los detalles</p>
+              <a href="mis-especialidades/certificado-alura-latam.html" class="btn btn-primary btn-sm" id="btn-alura-cert" target="_blank">
+                <ion-icon name="open-outline"></ion-icon>
+                Ver Certificado
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COURSERA -->
+        <div class="cert-provider-block reveal">
+          <div class="cert-provider-header">
+            <div class="cert-provider-logo">
+              <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/coursera.svg" alt="Coursera logo">
+            </div>
+            <div>
+              <h3 class="cert-provider-name">Coursera</h3>
+              <p class="cert-provider-sub">Plataforma de aprendizaje en línea con certificaciones verificadas</p>
+            </div>
+          </div>
+
+          <div class="cert-cards-grid">
+            <div class="cert-card cert-coursera">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/coursera.svg" alt="Coursera icon" class="cert-card-icon"></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">Certificación Coursera</h4>
+              <p class="cert-desc">Certificación obtenida en Coursera — Código ZULC6ZZU5XSW</p>
+              <p class="cert-note">PDF disponible en la raíz del proyecto.</p>
+              <div class="cert-tags">
+                <span>Coursera</span><span>Certificación</span><span>Online</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LINUX ESSENTIALS -->
+        <div class="cert-provider-block reveal">
+          <div class="cert-provider-header">
+            <div class="cert-provider-logo">
+              <img src="https://img.icons8.com/color/96/000000/linux.png" alt="Linux Tux logo">
+            </div>
+            <div>
+              <h3 class="cert-provider-name">Linux Essentials</h3>
+              <p class="cert-provider-sub">Certificación en fundamentos de Linux y sistemas operativos</p>
+            </div>
+          </div>
+
+          <div class="cert-cards-grid">
+            <div class="cert-card cert-linux">
+              <div class="cert-card-top">
+                <div class="cert-icon"><img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux icon" class="cert-card-icon"></div>
+                <span class="cert-year">2024</span>
+              </div>
+              <h4 class="cert-name">Linux Essentials</h4>
+              <p class="cert-desc">Certificación en conocimientos básicos de Linux, comandos y administración de sistemas</p>
+              <p class="cert-note">PDF disponible en la raíz del proyecto.</p>
+              <div class="cert-tags">
+                <span>Linux</span><span>Sistemas</span><span>Comandos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEAN SIX SIGMA -->
+        <div class="cert-provider-block reveal">
+          <div class="cert-provider-header">
+            <div class="cert-provider-logo">
+              <img src="mis-especialidades/assents/sixsigma.png" alt="Lean Six Sigma" id="sixsigma-logo">
+            </div>
+            <div>
+              <h3 class="cert-provider-name">Lean Six Sigma</h3>
+              <p class="cert-provider-sub">Metodología de mejora continua y gestión de calidad</p>
+            </div>
+          </div>
+
+          <div class="sixsigma-card reveal">
+            <div class="sixsigma-content">
+              <div class="sixsigma-badge">
+                <ion-icon name="analytics-outline"></ion-icon>
+                <span>WHITE BELT</span>
+              </div>
+              <h4>Lean Six Sigma White Belt</h4>
+              <p>Certificación en metodología Lean Six Sigma para mejora de procesos, reducción de defectos y
+                optimización operacional. Base sólida para la gestión de calidad en entornos empresariales.</p>
+              <div class="cert-tags">
+                <span>Lean</span><span>Six Sigma</span><span>Calidad</span><span>Procesos</span>
+              </div>
+            </div>
+            <div class="sixsigma-visual">
+              <img src="mis-especialidades/assents/sixsigma.png" alt="Lean Six Sigma White Belt">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== PROYECTOS ========== -->
+    <section class="section section-alt" id="proyectos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Mi Trabajo</span>
+          <h2 class="section-title">Proyectos <span class="gradient-text">Destacados</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card reveal" id="proj-integral">
+            <a href="https://formacionintegralcucba.vercel.app/" target="_blank" rel="noopener" class="project-link">
+              <div class="project-img-wrap">
+                <img src="https://s.wordpress.com/mshots/v1/https://formacionintegralcucba.vercel.app/?w=1200" alt="Captura de pantalla de Formación Integral CUCBA">
+                <div class="project-overlay">
+                  <span class="project-category">Aplicación Web</span>
+                </div>
+              </div>
+            </a>
+            <div class="project-info">
+              <h3 class="project-name">Formación Integral — CUCBA</h3>
+              <p class="project-desc">Sistema web de registro y gestión de talleres universitarios para la Universidad de Guadalajara. Integrado con Google Sheets para almacenamiento de datos en tiempo real.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Google Apps Script</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" id="proj-pomodoro">
+            <div class="project-img-wrap">
+              <img src="assets/images/Pomodorotime.jpg" alt="Pomodoro Timer App">
+              <div class="project-overlay">
+                <span class="project-category">Aplicación Web</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Pomodoro Timer</h3>
+              <p class="project-desc">Aplicación de productividad basada en la técnica Pomodoro para gestionar bloques de enfoque y descanso. Interfaz minimalista y funcional.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" id="proj-portfolio">
+            <div class="project-img-wrap project-img-gradient">
+              <div class="project-placeholder-icon">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Portafolio</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Portafolio Personal</h3>
+              <p class="project-desc">Este mismo portafolio — diseño dark premium con glassmorphism, animaciones con IntersectionObserver, formulario de contacto con Formspree y badges Credly verificables.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Formspree</span><span>Credly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section class="section services-section" id="servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Lo que ofrezco</span>
+          <h2 class="section-title">Mis <span class="gradient-text">Servicios</span></h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal" id="svc-web">
+            <div class="service-icon">
+              <ion-icon name="laptop-outline"></ion-icon>
+            </div>
+            <h3>Desarrollo Web</h3>
+            <p>Sitios web profesionales, responsivos y optimizados para SEO y velocidad. Desde landing pages hasta sistemas web completos.</p>
+            <ul class="service-list">
+              <li><ion-icon name="checkmark-outline"></ion-icon> HTML, CSS, JavaScript</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Diseño responsivo</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Integración con formularios</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-card-featured reveal" id="svc-ti">
+            <div class="service-card-badge">Más Solicitado</div>
+            <div class="service-icon">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3>Soporte Técnico TI</h3>
+            <p>Diagnóstico, reparación y mantenimiento de dispositivos móviles y laptops. Soluciones de hardware y software rápidas y confiables.</p>
+            <ul class="service-list">
+              <li><ion-icon name="checkmark-outline"></ion-icon> Reparación de smartphones</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Mantenimiento de laptops</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Solución de problemas de software</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal" id="svc-redes">
+            <div class="service-icon">
+              <ion-icon name="git-network-outline"></ion-icon>
+            </div>
+            <h3>Redes & Seguridad</h3>
+            <p>Configuración de redes, diagnóstico de conectividad y asesoría en ciberseguridad para empresas y hogares.</p>
+            <ul class="service-list">
+              <li><ion-icon name="checkmark-outline"></ion-icon> Configuración de redes</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Seguridad cibernética</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Asesoría en IoT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Trabajemos Juntos</span>
+          <h2 class="section-title">¿Tienes un <span class="gradient-text">Proyecto</span>?</h2>
+          <p class="section-description">Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Información de Contacto</h3>
+            <div class="contact-links">
+              <a href="mailto:aaronguzman3335@gmail.com" class="contact-link-card" id="contact-email">
+                <div class="contact-link-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <span>aaronguzman3335@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/AaronGuzmanSERVICE" target="_blank" rel="noopener" class="contact-link-card" id="contact-github">
+                <div class="contact-link-icon">
+                  <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>AaronGuzmanSERVICE</span>
+                </div>
+              </a>
+
+              <div class="contact-link-card" id="contact-location">
+                <div class="contact-link-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <div>
+                  <strong>Ubicación</strong>
+                  <span>Guadalajara, Jalisco, México</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-availability">
+              <div class="availability-dot"></div>
+              <span>Disponible para nuevos proyectos</span>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form action="https://formspree.io/f/xzzppplk" method="POST" class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Tu nombre</label>
+                  <input type="text" id="contact-name" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email-input">Tu correo</label>
+                  <input type="email" id="contact-email-input" name="email" placeholder="ej@empresa.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Asunto</label>
+                <input type="text" id="contact-subject" name="asunto" placeholder="¿En qué puedo ayudarte?">
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Mensaje</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto o necesidad..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="btn-submit-contact">
+                <ion-icon name="send-outline"></ion-icon>
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo">
+          <img src="assets/images/Logo%20Aaron.png" alt="Logo Aaron" class="logo-icon">
+          <span>Aaron Guzman</span>
+        </a>
+        <p class="footer-desc">Desarrollador Web & Técnico TI certificado. Creando soluciones digitales confiables desde Guadalajara, México.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Certificaciones</h4>
+        <ul>
+          <li><a href="#certificaciones">Cisco Networking</a></li>
+          <li><a href="#certificaciones">Alura LATAM</a></li>
+          <li><a href="#certificaciones">Coursera</a></li>
+          <li><a href="#certificaciones">Linux Essentials</a></li>
+          <li><a href="#certificaciones">Lean Six Sigma</a></li>
+          <li><a href="mis-especialidades/certificado-alura-latam.html" target="_blank">Ver Certificado</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Desarrollo Web</a></li>
+          <li><a href="#servicios">Soporte Técnico</a></li>
+          <li><a href="#servicios">Redes & Seguridad</a></li>
+          <li><a href="mailto:aaronguzman3335@gmail.com">Contacto Directo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2024 Oscar Aaron Guzman Hinojosa — Ageron Systems. Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="https://github.com/AaronGuzmanSERVICE" target="_blank" rel="noopener" aria-label="GitHub" id="footer-github">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="mailto:aaronguzman3335@gmail.com" aria-label="Email" id="footer-email">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
